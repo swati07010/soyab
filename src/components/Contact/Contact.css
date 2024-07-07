@@ -1,0 +1,169 @@
+/* Contact.css */
+
+.contact-page {
+    padding-top: 100px;
+   
+    justify-content: space-around;
+    width: 100%;
+    background-image: url("https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto/sitecoremedialibrary/media-library/images/motorcycles/rocket%203/my24/rocket%203%20storm%20-%20to%20use/rocket%203%20storm%20family/bikes-my24-rocket-3-storm-family-timeline-4-1920x780.png");
+    background-size: 100% 100%; 
+    padding-bottom: 300px;   
+  }
+  .card_about {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .card_about:hover{
+    background-color: rgb(174, 238, 174);
+  transform: scale(1.1); /* Adjust the scale value as needed */
+  transition: transform 0.9s ease;
+  }
+  .vehicle-cards-about {
+margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .whatsapp{
+    text-align: right;
+  }
+  .book-button-new {
+    background-color: #00ced1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .book-button-new:hover {
+    background-color: #20b2aa;
+    transform: scale(1.1); /* Adjust the scale value as needed */
+    transition: transform 0.9s ease;
+  }
+  
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-info ul li {
+    margin-bottom: 5px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .bubble {
+  position: absolute;
+  top: -100px; /* Initial position above the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.8); /* Bubble color with transparency */
+  border-radius: 50%; /* Rounded shape */
+  animation: floatBubble 10s ease-in-out infinite; /* Animation for floating */
+}
+
+.bubble::before,
+.bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: bubbleMove 10s ease-in-out infinite alternate;
+}
+
+.bubble::before {
+  width: 120px;
+  height: 120px;
+  animation-delay: 3s;
+}
+
+.bubble::after {
+  width: 60px;
+  height: 60px;
+  animation-delay: 6s;
+}
+
+@keyframes floatBubble {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bubbleMove {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}

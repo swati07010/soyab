@@ -1,0 +1,195 @@
+.about {
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+  background:  white;
+}
+.about-banner {
+  width: 100%;
+}
+.about-banner-img {
+  width: 100%;
+}
+.about-banner-img_a {
+  width: 20px;
+  height: 30px;
+}
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px; /* Space between columns */
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+}
+
+.about-img {
+  width: 80%;
+  height: auto;
+
+  border-radius: 8px;
+}
+
+.rightside {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+
+.about-content {
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.rating-client {
+  display: flex;
+  text-align: center;
+  padding-left: 30px;
+  color: rgb(24, 110, 32);
+}
+.bi-star-fill-new {
+  animation: rotate 10s linear infinite;
+  font-size: 50px;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-img {
+  height: 300px;
+}
+
+
+.main_all_bike {
+  display: flex;
+  width: 100%;
+}
+
+.vehicle-cards {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 190px;
+  
+}
+
+.card {
+  
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 20px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.card:hover{
+  background:rgb(149, 234, 149);
+transform: scale(1.1); /* Adjust the scale value as needed */
+transition: transform 0.9s ease;
+}
+.rightside{
+  border-radius: 30px;
+}
+.card-img {
+  
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: #ff4500;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+
+.book-button {
+  background-color: #00ced1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.book-button:hover {
+  background-color: #20b2aa;
+}
+
+@media (max-width: 900px) {
+  .about-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-content p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  .img1 {
+    display: none;
+  }
+  .bi-star-fill-new {
+    animation: rotate 10s linear infinite;
+    font-size: 40px;
+  
+  }
+  .leftside {
+    margin: 0 auto;
+  }
+  .about-img {
+    height: 200px;
+  }
+
+
+  .rightside {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}

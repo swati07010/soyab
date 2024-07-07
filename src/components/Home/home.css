@@ -1,0 +1,270 @@
+.home {
+  padding-top: 69px;
+  background: linear-gradient(-75deg, white);
+  width: 100%;
+  color:black;
+}
+
+.main-banner {
+  background: url('../../images/banner_main_new.png') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banners {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  /* animation: scroll 30s linear infinite; */
+}
+.process{
+  padding-top: 90px;
+}
+.banner {
+  flex: 0 0 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.main-banner{
+  margin-top: 0px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+@media (max-width: 500px) {
+  .main-heading {
+
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  .banner img {
+    height: auto;
+  }
+}
+.home{
+  padding-top: 69px;
+
+}
+.testimoninals {
+  padding-top: 90px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+.main-banner{
+  margin-top: 0px;
+}
+.testimoninal {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.question{
+  display: flex;
+  text-align: left;
+}
+.Allans{
+  border: solid white 2px;
+  box-shadow: 20px 20px 20px 10px rgba(0,0,0,0.1);
+  border-radius: 20px;  border-radius: 30px;
+  
+  cursor: pointer;
+  padding: 30px;
+}
+.answare{
+  text-align: left;
+}
+.how_to_get_with_ans{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.how_to_get{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.reviwes {
+  min-width: 20%;
+  padding: 20px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background:white;
+  scroll-snap-align: center;
+  color:black;
+  margin: 0 10px;
+  position: relative;
+  border: solid white 2px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;}
+
+.rating-star-all {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.rating-star {
+  color:green;
+  margin: 2px;
+}
+
+.user_name {
+  display: flex;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  color:black;
+}
+
+.user_reviwe {
+
+  cursor: pointer;
+  text-align: left;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.usericon {
+  font-size: 20px;
+}
+.Questions{
+  padding-top: 50px;
+}
+.about-services {
+  padding-top: 30px;
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.about-services-one {
+  border: solid white 2px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+  flex: 1 1 calc(25% - 20px); /* Ensure items are responsive */
+  box-sizing: border-box;
+}
+
+.about-services-one:hover{
+  border: solid black 1px;
+  
+}
+
+.Heading {
+  
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.main-heading {
+
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+.main-heading:hover {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  .main-banner{
+    margin-top: 4px;
+  }
+  .about-services-one {
+    
+    flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+  }
+  .about-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .user_reviwe{
+    padding-bottom: 18px;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .how_to_get_with_ans{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .testimoninal {
+    height: 300px;
+    overflow-y: scroll;
+    flex-direction: column;
+  }
+
+  .reviwes {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+  .about-services{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .user_reviwe{
+    padding-bottom: 18px;
+  }
+
+  .about-services-one {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+  
+}
+@media(max-width:700px){
+  .main-banner{
+    margin-top: 20px;
+  }
+}

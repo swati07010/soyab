@@ -1,0 +1,101 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.footer-container {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+}
+
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-contact, .footer-social {
+  margin: 0.2rem 0;
+  flex: 1 1 45%; /* Flex grow, flex shrink, and flex basis for responsive layout */
+  max-width: 45%; /* Ensure items don't get too wide */
+}
+
+.footer-contact p, .footer-social h3 {
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  margin-bottom: -40px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-contact, .footer-social {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 0.5rem;
+  }
+
+  .footer-contact {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    padding: 0.5rem;
+  }
+
+  .footer-contact {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+}
+
